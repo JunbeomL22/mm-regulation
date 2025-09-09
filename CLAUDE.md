@@ -12,6 +12,7 @@ This is a documentation-only repository containing Korean regulatory texts in Ma
 
 - **Core Guidelines**: `mm_guideline.md` - Main market making operational guidelines for stock and stock index derivatives
 - **Evaluation Criteria**: `mm_evaluation.md` - Market making performance evaluation standards and benchmarks
+- **Allocation Guidelines**: `mm_allocation_guideline.md` - Market making product allocation criteria and group classifications
 - **Detailed Rules**: 
   - `detailed_rules_derivative_market.md` - Derivative market operational regulations (Article 83)
   - `detailed_rules_tax_exemption.md` - Tax exemption requirements for market makers
