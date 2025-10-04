@@ -68,7 +68,7 @@ $$\frac{\text{의무호가제시시간} - \text{개시호가 지연시간} \time
     (4) 매도·매수 양방향으로 제출할 것. 
     다만, 다음의 어느 하나에 해당하는 경우에는 양방향 제출 요건을 충족한 것으로 본다:
 
-        (가) 당일의 상한가와 하한가 사이의 호가 간격이 호가가격단위(이하 ‘Tick’이라 한다)의 
+        (가) 당일의 상한가와 하한가 사이의 호가 간격이 호가가격단위(이하 'Tick'이라 한다)의 
         10배 이하인 경우로서 일방향 매도호가 또는 일방향 매수호가를 제출한 경우. 
         이 경우 일방향 시장조성호가와 타방향 최우선호가간 스프레드 및 호가수량은 계약에서 
         정하는 기준을 충족하여야 한다.
@@ -108,7 +108,7 @@ $$\frac{\text{의무호가제시시간} - \text{개시호가 지연시간} \time
 
 가) 일별 의무를 충족하지 못한 시장조성 의무종목이 4개 이하일 것
 
-나) 일별 의무를 충족하지 못한 시장조성 의무종목의 [3)](#3-의무충족일수)의 계산식에 따른 비율이 모두 [3)](#3-의무충족일수)[가)](#가-일중의무이행률)에 따른 일중의무이행률(이하 “일중의무이행률”이라 한다)에서 10%p를 차감한 수치 이상일 것 
+나) 일별 의무를 충족하지 못한 시장조성 의무종목의 [3)](#3-의무충족일수)의 계산식에 따른 비율이 모두 [3)](#3-의무충족일수)[가)](#가-일중의무이행률)에 따른 일중의무이행률(이하 "일중의무이행률"이라 한다)에서 10%p를 차감한 수치 이상일 것 
 
 ### 라. 평가결과 활용
 
@@ -250,7 +250,7 @@ $$
 
 $$
 \begin{align}
-&50\text{점}\times\frac{\big[X +Y + Z + W\big]}{400}  \nonumber\\
+&50\text{점}\times\frac{\left[X +Y + Z + W\right]}{400}  \nonumber\\
 &X \coloneqq \text{상품군별 초과의무이행도 평점} \nonumber \\
 &Y \coloneqq \text{ 호가스프레드 평점 } \nonumber \\
 &Z \coloneqq \text{호가수량 평점} \nonumber \\
@@ -271,7 +271,7 @@ $$
 ##### 나) 초과의무이행도 평점
 $$
 \begin{align}
-&\frac{배점}{400 \times I\times J \times K} \sum_{i=1}^{I} \sum_{j=1}^{J} \sum_{k=1}^{K} MAX\bigg(0, \frac{\text{의무 이행시간}_{i,j,k} - \text{의무 기준시간}_{i,j,k}}{\text{초과 가능시간}_{i,j,k}} \bigg) \nonumber \\
+&\frac{배점}{400 \times I\times J \times K} \sum_{i=1}^{I} \sum_{j=1}^{J} \sum_{k=1}^{K} \text{MAX}\left(0, \frac{\text{의무 이행시간}_{i,j,k} - \text{의무 기준시간}_{i,j,k}}{\text{초과 가능시간}_{i,j,k}} \right) \nonumber \\
 \text{where:} \nonumber \\
 &I \coloneqq \text{총 의무발생일수} \nonumber \\
 &J \coloneqq \text{의무종목 수} \nonumber \\
@@ -288,7 +288,7 @@ $$
 
 $$
 \begin{align}
-&\text{배점} \times \left(1 - \frac{1}{I \times J \times K}\sum_{i=1}^{I} \sum_{j=1}^{J} \sum_{k=1}^{K} \text{MIN}\bigg\{1, \frac{\text{시장조성자 평균 스프레드}_{i,j,k}}{\text{의무 스프레드}_{i,j,k}} \bigg\}\right)
+&\text{배점} \times \left(1 - \frac{1}{I \times J \times K}\sum_{i=1}^{I} \sum_{j=1}^{J} \sum_{k=1}^{K} \text{MIN}\left\{1, \frac{\text{시장조성자 평균 스프레드}_{i,j,k}}{\text{의무 스프레드}_{i,j,k}} \right\}\right)
 \nonumber \\[1em]
 \text{where:} \nonumber \\
 &I \coloneqq \text{총 의무발생일수} \nonumber \\
@@ -312,7 +312,7 @@ $$
 
     가. 양방향 의무호가의 경우 : 의무스프레드가 비율로 주어지는 경우에는 비율[(매도호가-매수호가)÷매수호가×100]로 산정하고, 의무스프레드가 Tick으로 주어지는 경우에는 매도호가 및 매수호가 간 Tick으로 계산한다. 다만, 주식옵션의 경우 의무호가의 매도호가 및 매수호가 간 Tick이 2Tick 이하인 경우에는 0으로 처리한다.
 
-    나. 양방향 제출 요건의 예외에 해당하는 의무호가의 경우 : 일방향으로 제출된 의무호가(이하 “일방향 의무호가”라 한다)를 대상으로 가목을 준용하여 다음에 따라 개별 의무호가의 스프레드를 산정한다.
+    나. 양방향 제출 요건의 예외에 해당하는 의무호가의 경우 : 일방향으로 제출된 의무호가(이하 "일방향 의무호가"라 한다)를 대상으로 가목을 준용하여 다음에 따라 개별 의무호가의 스프레드를 산정한다.
 
         1) 타방 최우선호가가 있는 경우 : 일방향 의무호가와 타방 최우선호가를 기준으로 산정한다.
 
@@ -328,16 +328,16 @@ $$
 ##### 라) 호가수량 평점
 다음 계산식에 따라 산출하고, 일중의무이행률(옵션상품의 경우에는 의무구제 적용 전 일중의무이행률)을 충족하지 못한 의무종목은 해당일의 의무수량과 호가수량배수를 곱한 값에 대한 평균수량의 비율을 0으로 처리한다. 이 경우 다음 계산식의 의무수량, 호가수량배수 및 평균수량은 다음과 같다. 
 
-$$
+$
 \begin{align}
-&\frac{배점}{I \times J \times K}\sum_{i=1}^{I} \sum_{j=1}^{J} \sum_{k=1}^{K} \text{MIN}\bigg\{1, \frac{\text{평균수량}_{i,j,k}}{\text{의무 수량}_{i,j,k} \times \text{호가수량배수}_{i,j,k}} \bigg\}
+&\frac{배점}{I \times J \times K}\sum_{i=1}^{I} \sum_{j=1}^{J} \sum_{k=1}^{K} \text{MIN}\left\{1, \frac{\text{평균수량}_{i,j,k}}{\text{의무 수량}_{i,j,k} \times \text{호가수량배수}_{i,j,k}} \right\}
 \nonumber \\[1em]
 \text{where:} \nonumber \\
 &I \coloneqq \text{총 의무발생일수} \nonumber \\
 &J \coloneqq \text{의무종목 수} \nonumber \\
 &K \coloneqq \text{시장조성상품 수} \nonumber 
 \end{align}
-$$
+$
 
 (1) 의무수량 : 시장조성계약에서 정한 최소호가수량
 
@@ -345,11 +345,11 @@ $$
 
 (3) 평균수량 : 다음 계산식에 따라 산출한다:
 
-$$
+$
 \begin{align}
-\frac{\sum \big(\text{개별의무호가의 호가수량} \times \text{의무호가제시시간}\big)}{전체의무이행시간} \nonumber 
+\frac{\sum \left(\text{개별의무호가의 호가수량} \times \text{의무호가제시시간}\right)}{전체의무이행시간} \nonumber 
 \end{align}
-$$
+$
 
 비고
 1. 전체 의무이행시간은 평가대상 의무호가의 건별 의무호가 제시시간의 합계로 한다. 이 경우 같은 시간대에 제출된 의무호가 제시시간은 중복하여 계산한다.
@@ -365,7 +365,7 @@ $$
 다음 계산식에 따라 산출하되, 해당 시장조성상품 거래대금(정규거래시간의 거래대금으로 한정한다. 이하 이 표에서 같다)이 존재하지 않는 경우에는 해당 시장조성상품 거래대금에 대한 시장조성자 거래대금의 비율을 0으로 처리한다. 이 경우 다음 계산식의 시장조성자 거래대금, 해당 시장조성상품 거래대금, 상품군별 거래대금 중앙값, 거래소가 정하는 거래량 및 시장조성자 거래량의 산정방식은 다음과 같다. 
 
 **주식선물·ETF선물, 주식옵션:**
-$$
+$
 \begin{align}
 &\frac{\text{배점}}{I \times J} \sum_{i=1}^{I} \sum_{j=1}^{J} \left( 0.4 \times \frac{x_{i,j}}{X_{i,j}} + 0.6 \times \frac{x_{i,j}}{\mu_{j}} \right)
 \nonumber \\[1em]
@@ -376,10 +376,10 @@ $$
 &I \coloneqq \text{총 의무발생일수} \nonumber \\
 &J \coloneqq \text{시장조성상품 수} \nonumber 
 \end{align}
-$$
+$
 
 **섹터지수선물, 주가지수선물·옵션:**
-$$
+$
 \begin{align}
 &\frac{\text{배점}}{I \times J} \sum_{i=1}^{I} \sum_{j=1}^{J} \frac{\text{시장조성자 거래량}_{i,j}}{\text{거래소가 정하는 거래량}_{i,j}}
 \nonumber \\[1em]
@@ -387,7 +387,7 @@ $$
 &I \coloneqq \text{총 의무발생일수} \nonumber \\
 &J \coloneqq \text{시장조성상품 수} \nonumber 
 \end{align}
-$$
+$
 
 (1) 해당 시장조성상품 거래대금 : 평가기간 중 평가대상 시장조성상품의 모든 종목에 대한 거래대금으로 한다. 이 경우 매수대금 또는 매도대금 한쪽만 계산하고, 스프레드거래를 포함한다.
 
