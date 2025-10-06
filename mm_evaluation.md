@@ -117,11 +117,11 @@ $$\frac{\text{의무호가제시시간} - \text{개시호가 지연시간} \time
 ##### 가) 시장조성대가
 $$
 \begin{align}
-\text{시장조성대가} &= X \times Y \times Z \nonumber \\
-\text{where:} \nonumber \\
-X &~\coloneqq \text{대가지급상품 수수료 수입} \nonumber \\
-Y &~\coloneqq \frac{\text{시장조성자의 대가지급상품 평가기간 거래량}}{\text{대가지급상품 평가기간 거래량}} \nonumber \\
-Z &~\coloneqq \text{위험등급에 따른 환급률}\nonumber 
+&\text{시장조성대가} = X \times Y \times Z \nonumber \\
+&\text{where:} \nonumber \\
+&X ~\coloneqq \text{대가지급상품 수수료 수입} \nonumber \\
+&Y ~\coloneqq \frac{\text{시장조성자의 대가지급상품 평가기간 거래량}}{\text{대가지급상품 평가기간 거래량}} \nonumber \\
+&Z ~\coloneqq \text{위험등급에 따른 환급률}\nonumber 
 \end{align}
 $$
 ###### (1) 대가지급상품 수수료 수입
