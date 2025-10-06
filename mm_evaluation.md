@@ -291,12 +291,12 @@ $$
 
 $$
 \begin{align}
-&\text{배점} \times \left(1 - \frac{1}{I \times J \times K}\sum_{i=1}^{I} \sum_{j=1}^{J} \sum_{k=1}^{K} \text{MIN}\left\{1, \frac{\text{시장조성자 평균 스프레드}_{i,j,k}}{\text{의무 스프레드}_{i,j,k}} \right\}\right)
+&\text{배점} \times \left(1 - \frac{1}{I \times J \times K}\sum_{i=1}^{I} \sum_{j=1}^{J} \sum_{k=1}^{K} \text{MIN}\left(1, \frac{\text{시장조성자 평균 스프레드}_{i,j,k}}{\text{의무 스프레드}_{i,j,k}} \right)\right)
 \nonumber \\[1em]
 \text{where:} \nonumber \\
 &I \coloneqq \text{총 의무발생일수} \nonumber \\
 &J \coloneqq \text{의무종목 수} \nonumber \\
-&K \coloneqq \text{시장조성상품 수}\nonumber 
+&K \coloneqq \text{시장조성상품 수}\nonumber
 \end{align}
 $$
 
