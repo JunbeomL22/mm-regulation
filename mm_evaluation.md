@@ -119,9 +119,9 @@ $$
 \begin{align}
 \text{시장조성대가} &= X \times Y \times Z \nonumber \\
 \text{where:} \nonumber \\
-X &\coloneqq \text{대가지급상품 수수료 수입} \nonumber \\
-Y &\coloneqq \frac{\text{시장조성자의 대가지급상품 평가기간 거래량}}{\text{대가지급상품 평가기간 거래량}} \nonumber \\
-Z &\coloneqq \text{위험등급에 따른 환급률}\nonumber 
+X &~\coloneqq \text{대가지급상품 수수료 수입} \nonumber \\
+Y &~\coloneqq \frac{\text{시장조성자의 대가지급상품 평가기간 거래량}}{\text{대가지급상품 평가기간 거래량}} \nonumber \\
+Z &~\coloneqq \text{위험등급에 따른 환급률}\nonumber 
 \end{align}
 $$
 ###### (1) 대가지급상품 수수료 수입
@@ -251,10 +251,10 @@ $$
 $$
 \begin{align}
 &50\text{점}\times\frac{\left[X +Y + Z + W\right]}{400}  \nonumber\\
-&X \coloneqq \text{상품군별 초과의무이행도 평점} \nonumber \\
-&Y \coloneqq \text{ 호가스프레드 평점 } \nonumber \\
-&Z \coloneqq \text{호가수량 평점} \nonumber \\
-&W \coloneqq \text{거래량 평점의 합계} \nonumber 
+&X ~\coloneqq \text{상품군별 초과의무이행도 평점} \nonumber \\
+&Y ~\coloneqq \text{ 호가스프레드 평점 } \nonumber \\
+&Z ~\coloneqq \text{호가수량 평점} \nonumber \\
+&W ~\coloneqq \text{거래량 평점의 합계} \nonumber 
 \end{align}
 $$
 
@@ -274,9 +274,9 @@ $$
 \begin{align}
 &\frac{배점}{400 \times I\times J \times K} \sum_{i=1}^{I} \sum_{j=1}^{J} \sum_{k=1}^{K} \text{MAX}\left(0, \frac{\text{의무 이행시간}_{i,j,k} - \text{의무 기준시간}_{i,j,k}}{\text{초과 가능시간}_{i,j,k}} \right) \nonumber \\
 \text{where:} \nonumber \\
-&I \coloneqq \text{총 의무발생일수} \nonumber \\
-&J \coloneqq \text{의무종목 수} \nonumber \\
-&K \coloneqq \text{시장조성상품 수} \nonumber 
+&I ~\coloneqq \text{총 의무발생일수} \nonumber \\
+&J ~\coloneqq \text{의무종목 수} \nonumber \\
+&K ~\coloneqq \text{시장조성상품 수} \nonumber 
 \end{align}
 $$
 
@@ -294,9 +294,9 @@ $$
 &\text{배점} \times \left(1 - \frac{1}{I \times J \times K}\sum_{i=1}^{I} \sum_{j=1}^{J} \sum_{k=1}^{K} \text{MIN}\left(1, \frac{\text{시장조성자 평균 스프레드}_{i,j,k}}{\text{의무 스프레드}_{i,j,k}} \right)\right)
 \nonumber \\
 \text{where:} \nonumber \\
-&I \coloneqq \text{총 의무발생일수} \nonumber \\
-&J \coloneqq \text{의무종목 수} \nonumber \\
-&K \coloneqq \text{시장조성상품 수}\nonumber
+&I ~\coloneqq \text{총 의무발생일수} \nonumber \\
+&J ~\coloneqq \text{의무종목 수} \nonumber \\
+&K ~\coloneqq \text{시장조성상품 수}\nonumber
 \end{align}
 $$
 
@@ -334,11 +334,11 @@ $$
 $$
 \begin{align}
 &\frac{배점}{I \times J \times K}\sum_{i=1}^{I} \sum_{j=1}^{J} \sum_{k=1}^{K} \text{MIN}\left(1, \frac{\text{평균수량}_{i,j,k}}{\text{의무 수량}_{i,j,k} \times \text{호가수량배수}_{i,j,k}} \right)
-\nonumber \\[1em]
+\nonumber \\
 \text{where:} \nonumber \\
-&I \coloneqq \text{총 의무발생일수} \nonumber \\
-&J \coloneqq \text{의무종목 수} \nonumber \\
-&K \coloneqq \text{시장조성상품 수} \nonumber
+&I ~\coloneqq \text{총 의무발생일수} \nonumber \\
+&J ~\coloneqq \text{의무종목 수} \nonumber \\
+&K ~\coloneqq \text{시장조성상품 수} \nonumber
 \end{align}
 $$
 
@@ -374,11 +374,11 @@ $$
 &\frac{\text{배점}}{I \times J} \sum_{i=1}^{I} \sum_{j=1}^{J} \left( 0.4 \times \frac{x_{i,j}}{X_{i,j}} + 0.6 \times \frac{x_{i,j}}{\mu_{j}} \right)
 \nonumber \\
 \text{where:} \nonumber \\
-&x \coloneqq \text{시장조상자 거래대금} \nonumber \\
-&X \coloneqq \text{ 해당시장조성상품 거래대금} \nonumber \\ 
-&\mu \coloneqq \text{상품군별 거래대금 중앙값} \nonumber \\ 
-&I \coloneqq \text{총 의무발생일수} \nonumber \\
-&J \coloneqq \text{시장조성상품 수} \nonumber 
+&x ~\coloneqq \text{시장조상자 거래대금} \nonumber \\
+&X ~\coloneqq \text{ 해당시장조성상품 거래대금} \nonumber \\ 
+&\mu ~\coloneqq \text{상품군별 거래대금 중앙값} \nonumber \\ 
+&I ~\coloneqq \text{총 의무발생일수} \nonumber \\
+&J ~\coloneqq \text{시장조성상품 수} \nonumber 
 \end{align}
 $$
 
@@ -389,8 +389,8 @@ $$
 &\frac{\text{배점}}{I \times J} \sum_{i=1}^{I} \sum_{j=1}^{J} \frac{\text{시장조성자 거래량}_{i,j}}{\text{거래소가 정하는 거래량}_{i,j}}
 \nonumber \\
 \text{where:} \nonumber \\
-&I \coloneqq \text{총 의무발생일수} \nonumber \\
-&J \coloneqq \text{시장조성상품 수} \nonumber 
+&I ~\coloneqq \text{총 의무발생일수} \nonumber \\
+&J ~\coloneqq \text{시장조성상품 수} \nonumber 
 \end{align}
 $$
 
