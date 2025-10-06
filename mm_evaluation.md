@@ -333,12 +333,12 @@ $$
 
 $$
 \begin{align}
-&\frac{배점}{I \times J \times K}\sum_{i=1}^{I} \sum_{j=1}^{J} \sum_{k=1}^{K} \text{MIN}\left\{1, \frac{\text{평균수량}_{i,j,k}}{\text{의무 수량}_{i,j,k} \times \text{호가수량배수}_{i,j,k}} \right\}
+&\frac{배점}{I \times J \times K}\sum_{i=1}^{I} \sum_{j=1}^{J} \sum_{k=1}^{K} \text{MIN}\left(1, \frac{\text{평균수량}_{i,j,k}}{\text{의무 수량}_{i,j,k} \times \text{호가수량배수}_{i,j,k}} \right)
 \nonumber \\[1em]
 \text{where:} \nonumber \\
 &I \coloneqq \text{총 의무발생일수} \nonumber \\
 &J \coloneqq \text{의무종목 수} \nonumber \\
-&K \coloneqq \text{시장조성상품 수} \nonumber 
+&K \coloneqq \text{시장조성상품 수} \nonumber
 \end{align}
 $$
 
@@ -372,7 +372,7 @@ $$
 $$
 \begin{align}
 &\frac{\text{배점}}{I \times J} \sum_{i=1}^{I} \sum_{j=1}^{J} \left( 0.4 \times \frac{x_{i,j}}{X_{i,j}} + 0.6 \times \frac{x_{i,j}}{\mu_{j}} \right)
-\nonumber \\[1em]
+\nonumber \\
 \text{where:} \nonumber \\
 &x \coloneqq \text{시장조상자 거래대금} \nonumber \\
 &X \coloneqq \text{ 해당시장조성상품 거래대금} \nonumber \\ 
@@ -387,7 +387,7 @@ $$
 $$
 \begin{align}
 &\frac{\text{배점}}{I \times J} \sum_{i=1}^{I} \sum_{j=1}^{J} \frac{\text{시장조성자 거래량}_{i,j}}{\text{거래소가 정하는 거래량}_{i,j}}
-\nonumber \\[1em]
+\nonumber \\
 \text{where:} \nonumber \\
 &I \coloneqq \text{총 의무발생일수} \nonumber \\
 &J \coloneqq \text{시장조성상품 수} \nonumber 
